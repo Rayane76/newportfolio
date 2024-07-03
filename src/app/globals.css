@@ -29,6 +29,22 @@ body{
     width: 100vw;
     @apply bg-fun-pink;
   }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: white !important;
+  }
+
+  .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #00c7ff !important;
+    border-bottom: #00c7ff;
+}
+
+.workList::before{
+  --tw-content: "▹";
+  content: var(--tw-content);
+  color: #00c7ff;
+  margin-right: 10px;
+}
   
   @media (max-width: 768px) {
     .landingSectionTitle::before {

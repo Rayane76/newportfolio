@@ -1,7 +1,5 @@
 
 
-
-
 export default function SectionTitle({ title }){
     return(
         <div className="overflow-x-hidden w-full pt-5">
