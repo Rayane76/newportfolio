@@ -3,6 +3,8 @@ import { useState } from "react";
 import "../styles/navbar.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { usePathname } from "next/navigation";
+
 
 
 
@@ -12,6 +14,9 @@ export default function Navbar() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
+
+  const pathname = usePathname();
+
   
   return (
     <header id="header" className="w-full flex justify-center">
@@ -24,13 +29,13 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex justify-center gap-5 items-center">
-          <a href="/" className="cursor-pointer font-medium">
+          <a href="/" className={`cursor-pointer font-medium hover:text-white ${(pathname === "/") ? "text-white" :  "text-white/50"}`}>
             Home
           </a>
-          <a href="/about" className="cursor-pointer font-medium">
+          <a href="/about" className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/about")) ? "text-white" :  "text-white/50"}`}>
             About
           </a>
-          <a href="/projects" className="cursor-pointer font-medium">
+          <a href="/projects" className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/projects")) ? "text-white" :  "text-white/50"}`}>
             Projects
           </a>
         </div>

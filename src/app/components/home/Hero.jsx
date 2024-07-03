@@ -1,4 +1,5 @@
 import "../../styles/hero.css"
+import CvPreview from "./CvPreview"
 
 
 export default function Hero(){
@@ -58,9 +59,7 @@ export default function Hero(){
             />
           </h1>
 
-          <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bgColor hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors">
-            Preview CV
-          </div>
+          <CvPreview />
 
           </div>
           </>

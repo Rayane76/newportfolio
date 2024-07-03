@@ -10,5 +10,41 @@
 
 body{
     background-color: #000a1f;
-
 }
+
+.landingSectionTitle{
+  margin: 0 !important;
+}
+
+
+
+.landingSectionTitle::before {
+    content: "";
+    position: absolute;
+    left: 105%;
+    right: 0px;
+    top: 70%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100vw;
+    @apply bg-fun-pink;
+  }
+  
+  @media (max-width: 768px) {
+    .landingSectionTitle::before {
+      left: 50%;
+      right: auto;
+      top: -20px;
+      transform: translate(-50%, -50%);
+      height: 8px;
+      width: 150px;
+      @apply bg-fun-pink;
+    }
+    .landingSectionTitle{
+      margin: 0 auto !important;
+    }
+
+    .skillsDiv{
+
+    }
+  }
