@@ -9,7 +9,7 @@ export default function Hero(){
           className="text-white relative heroElem w-full pt-10 md:pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
           style={{ maxWidth: "1200px" }}
         >
-          <p className="text-xl mb-5">Hey, I'm Rayane.</p>
+          <p className="text-xl mb-5">Hey, I'm Rayane Hiouani.</p>
           <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
             I enjoy building <span style={{color:"rgb(0,199,255)"}} className="text-fun-pink">innovative</span> and{" "}
             <span style={{color:"rgb(0,199,255)"}} className="text-fun-pink">interactive</span> web applications.
