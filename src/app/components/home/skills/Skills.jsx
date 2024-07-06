@@ -6,15 +6,15 @@ export default function Skills() {
     const skills= [
         {
           title: "HTML",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          icon: "/skills/html5-original.svg",
         },
         {
           title: "CSS",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          icon: "/skills/css3-original.svg",
         },
         {
           title: "Javascript",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          icon: "/skills/javascript-original.svg",
         },
         {
           title: "Bootstrap",
@@ -26,7 +26,7 @@ export default function Skills() {
         },
         {
           title: "React",
-          icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          icon: "/skills/react-original.svg",
         },
         {
           title: "NextJS",
@@ -59,7 +59,7 @@ export default function Skills() {
         },
         {
             title: "Git",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+            icon: "/skills/git-original.svg",
         },
         {
             title: "Docker",
