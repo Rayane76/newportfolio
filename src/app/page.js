@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Hero from "./components/home/Hero";
 import PersonalProjects from "./components/home/personalProjects/PersonalProjects";
 import Projects from "./components/home/projects/Projects";
@@ -12,6 +13,7 @@ export default function Home() {
          <PersonalProjects />
          <Skills />
          <Work />
+         <Footer />
     </>
   );
 }

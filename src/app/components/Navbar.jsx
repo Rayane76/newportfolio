@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState , useEffect } from "react";
 import "../styles/navbar.css";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,7 +18,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   let lastScrollTop = 0;
-
+  if (typeof window !== "undefined") {
 window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY;
 
@@ -36,10 +36,11 @@ window.addEventListener('scroll', () => {
 
     lastScrollTop = scrollTop;
 });
+  }
 
   
   return (
-    <header id="header" className="w-full flex justify-center sticky top-0 z-10">
+    <header id="header" className="w-full flex justify-center sticky z-40 top-0">
       <div
         style={{ maxWidth: "1200px" }}
         className="w-full h-24 bg-bgColor mb-1 text-white flex justify-between"
