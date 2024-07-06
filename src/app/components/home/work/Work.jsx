@@ -55,6 +55,7 @@ export default function Work(){
                 <li className="workList text-base mb-2">Implemented UI components with React & Next.js, Bootstrap & Tailwind CSS.</li>
                 <li className="workList text-base mb-2">Understanding client needs and proposing effective solutions, which also involves strategising and planning.</li>
                 <li className="workList text-base mb-2">Developed robust backend APIs using Next.js, MongoDB, and Express.js, ensuring seamless data flow and high performance.</li>
+                <li className="workList text-base mb-2">Hosted multiple projects on a personal server using Docker, ensuring efficient deployment and consistent environments.</li>
             </ul>
         </div>
       </CustomTabPanel>

@@ -16,6 +16,7 @@ module.exports = {
         "bgColor" : "#000a1f",
         "fun-pink" : "#00c7ff",
         "fun-gray": "#7b89a8",
+        "fun-pink-dark": "#192742",
       }
     },
   },
