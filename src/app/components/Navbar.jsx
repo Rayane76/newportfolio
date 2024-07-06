@@ -17,9 +17,29 @@ export default function Navbar() {
 
   const pathname = usePathname();
 
+  let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    let scrollTop = window.scrollY;
+
+    const navbar = document.getElementById("header");
+
+    if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        navbar.classList.remove("hide");
+        navbar.classList.add("show")
+    } else {
+        // Scrolling up or at the top
+        navbar.classList.remove("show");
+        navbar.classList.add("hide");
+    }
+
+    lastScrollTop = scrollTop;
+});
+
   
   return (
-    <header id="header" className="w-full flex justify-center">
+    <header id="header" className="w-full flex justify-center sticky top-0 z-10">
       <div
         style={{ maxWidth: "1200px" }}
         className="w-full h-24 bg-bgColor mb-1 text-white flex justify-between"
@@ -29,15 +49,26 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex justify-center gap-5 items-center">
-          <a href="/" className={`cursor-pointer font-medium hover:text-white ${(pathname === "/") ? "text-white" :  "text-white/50"}`}>
+          <a href="/" 
+          className="cursor-pointer font-medium text-white"
+          // className={`cursor-pointer font-medium hover:text-white ${(pathname === "/") ? "text-white" :  "text-white/50"}`}
+          >
             Home
           </a>
-          <a href="/about" className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/about")) ? "text-white" :  "text-white/50"}`}>
-            About
-          </a>
-          <a href="/projects" className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/projects")) ? "text-white" :  "text-white/50"}`}>
+          <span 
+           onClick={()=>{var myElement = document.getElementById('projects');myElement.scrollIntoView() }}
+           className="cursor-pointer font-medium text-white"
+          // className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/about")) ? "text-white" :  "text-white/50"}`}
+          >
             Projects
-          </a>
+          </span>
+          <span
+          onClick={()=>{var myElement = document.getElementById('skills');myElement.scrollIntoView() }}
+           className="cursor-pointer font-medium text-white"
+          //  className={`cursor-pointer font-medium hover:text-white ${(pathname.includes("/projects")) ? "text-white" :  "text-white/50"}`}
+           >
+            Skills
+          </span>
         </div>
         <div
           id="hamburger"
@@ -74,8 +105,8 @@ export default function Navbar() {
       >
 
            <a href="/"><h1 className="text-white text-sm	w-11/12 pt-4 pb-3 border-b border-slate-600 font-semibold">Home</h1></a>
-           <a href="/about"><h1 className="text-white text-sm	w-11/12 pt-4 pb-3 border-b border-slate-600 font-semibold">About</h1></a>
-           <a href="/projects"><h1 className="text-white text-sm	w-11/12 pt-4 pb-3 border-b border-slate-600 font-semibold">Projects</h1></a>
+           <span onClick={()=>{var myElement = document.getElementById('projects');setShow(false);myElement.scrollIntoView() }}><h1 className="text-white text-sm	w-11/12 pt-4 pb-3 border-b border-slate-600 font-semibold cursor-pointer">Projects</h1></span>
+           <span onClick={()=>{var myElement = document.getElementById('skills');setShow(false);myElement.scrollIntoView() }}><h1 className="text-white text-sm	w-11/12 pt-4 pb-3 border-b border-slate-600 font-semibold cursor-pointer">Skills</h1></span>
 
       </div>
         </Offcanvas.Body>

@@ -5,17 +5,23 @@
 
 :root{
     background-color: #000a1f;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body{
-    background-color: #000a1f;
+    background-color: #000a1f !important;
+    overflow-x: hidden !important;
 }
 
 .landingSectionTitle{
   margin: 0 !important;
 }
 
+
+.card{
+  width: 355px;
+  height: 263px;
+}
 
 
 .landingSectionTitle::before {
@@ -60,7 +66,9 @@ body{
       margin: 0 auto !important;
     }
 
-    .skillsDiv{
-
-    }
+    
+.card{
+  width: 355px;
+  height: 263px;
+}
   }

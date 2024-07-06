@@ -67,7 +67,7 @@ export default function Skills() {
         },
       ];
   return (
-    <div className="w-full flex justify-center">
+    <div id="skills" className="w-full flex justify-center">
     <div style={{width:"1200px",maxWidth:"1200px"}} className="mt-10">
     <div className="w-full justify-center flex mb-10">
     <SectionTitle title="Skills. " />

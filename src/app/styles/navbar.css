@@ -1,0 +1,27 @@
+.hide{
+    animation: hideAnimate 0.5s forwards;
+}
+
+@keyframes hideAnimate {
+    from{
+    transform: translateY(-100%)
+    }
+
+    to{
+      transform:   translateY(0); 
+    }
+}
+
+.show{
+    animation: showAnimate 0.5s forwards;
+}
+
+@keyframes showAnimate {
+    from{
+        transform:   translateY(0); 
+    }
+
+    to{
+        transform: translateY(-100%)
+    }
+}

@@ -1728,121 +1728,121 @@ export default function SvgSkills(){
               >
                 <g opacity="1" transform="matrix(1,0,0,1,0,45)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,40)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,35)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,30)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,25)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-26.319000244140625,-102.28299713134766 C-4.038000106811523,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,20)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-35.551998138427734,-102.28299713134766 C-28.479000091552734,-102.28299713134766 -8.28600025177002,-102.28299713134766 9.706000328063965,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,15)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d="M0 0"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,10)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 31.73900032043457,-102.28299713134766 40.9010009765625,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,5)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
                 <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="4"
+                    strokeMiterlimit="4"
                     stroke="rgb(55,189,247)"
-                    stroke-opacity="1"
-                    stroke-width="2"
+                    strokeOpacity="1"
+                    strokeWidth="2"
                     d=" M-38.16600036621094,-102.28299713134766 C-38.16600036621094,-102.28299713134766 41.887001037597656,-102.28299713134766 41.887001037597656,-102.28299713134766"
                   ></path>
                 </g>
@@ -2071,13 +2071,13 @@ export default function SvgSkills(){
               >
                 <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                   <path
-                    stroke-linecap="butt"
-                    stroke-linejoin="miter"
+                    strokeLinecap="butt"
+                    strokeLinejoin="miter"
                     fillOpacity="0"
-                    stroke-miterlimit="10"
+                    strokeMiterlimit="10"
                     stroke="rgb(51,64,84)"
-                    stroke-opacity="1"
-                    stroke-width="0.75"
+                    strokeOpacity="1"
+                    strokeWidth="0.75"
                     d=" M-126.31800079345703,-52.44300079345703 C-126.15599822998047,-52.44300079345703 -122.50499725341797,-51.57099914550781 -120.5739974975586,-51.106998443603516 C-119.96099853515625,-50.959999084472656 -119.63700103759766,-50.29399871826172 -119.89399719238281,-49.71799850463867 C-119.89399719238281,-49.71799850463867 -121.13300323486328,-46.939998626708984 -121.13300323486328,-46.939998626708984 C-121.55599975585938,-45.99100112915039 -122.4990005493164,-45.37900161743164 -123.53900146484375,-45.37900161743164 C-123.53900146484375,-45.37900161743164 -127.86399841308594,-45.37900161743164 -127.86399841308594,-45.37900161743164"
                   ></path>
                 </g>
@@ -2174,13 +2174,13 @@ export default function SvgSkills(){
               </g>
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="miter"
+                  strokeLinecap="round"
+                  strokeLinejoin="miter"
                   fillOpacity="0"
-                  stroke-miterlimit="10"
+                  strokeMiterlimit="10"
                   stroke="rgb(29,41,59)"
-                  stroke-opacity="1"
-                  stroke-width="4"
+                  strokeOpacity="1"
+                  strokeWidth="4"
                   d=" M-87.78500366210938,101.78199768066406 C-131.68899536132812,126.7229995727539 -144.79299926757812,108.5459976196289 -148.36099243164062,99.81099700927734 C-149.30999755859375,97.48899841308594 -149.58399963378906,95.83300018310547 -149.58399963378906,95.83300018310547 C-149.58399963378906,95.83300018310547 -158.49600219726562,49.625999450683594 -170.4290008544922,28.31100082397461 C-180.49400329589844,10.331999778747559 -193.91700744628906,-1.6260000467300415 -214.83599853515625,-2.257999897003174"
                 ></path>
               </g>
