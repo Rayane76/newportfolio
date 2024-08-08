@@ -11,10 +11,19 @@ function Projects() {
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start mt-5">
 
             <Card 
+            image="aposto.png"
+            title="Aposto store"
+            desc="E-commerce website for Aposto : Clothes brand." 
+            techs={["NextJs" , "Typescript" , "Bootstrap" , "Prisma"]}
+            link="https://www.aposto.store"  
+            github="https://github.com/Rayane76/aposto"
+            />
+
+            <Card 
             image="candy.png"
             title="Candy lokum"
             desc="E-commerce website for candies." 
-            techs={["NextJs" , "Bootstrap" , "Mongodb"]}
+            techs={["NextJs" , "Bootstrap" , "Mongodb" , "Docker"]}
             link="http://candy-lokum.ai2dz.com/"  
             github=""
             />
