@@ -50,7 +50,7 @@ export default function Work(){
       <CustomTabPanel style={{color:"white"}} value={value} index={0}>
         <div>
             <h1 className="text-2xl">Web Developer <a href="https://codeitdz.com/" target="_blank" className="text-fun-pink">@CodeItDz</a></h1>
-            <p className="text-sm text-fun-gray mt-2">February 2024 - Present</p>
+            <p className="text-sm text-fun-gray mt-2">February 2024 - August 2024</p>
             <ul className="mt-2">
                 <li className="workList text-base mb-2">Implemented UI components with React & Next.js, Bootstrap & Tailwind CSS.</li>
                 <li className="workList text-base mb-2">Understanding client needs and proposing effective solutions, which also involves strategising and planning.</li>

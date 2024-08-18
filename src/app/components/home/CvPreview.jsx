@@ -56,7 +56,7 @@ export default function CvPreview(){
       };
 
       const [showModal, setShowModal] = useState(false);
-      const cvUrl = '/Rayane_Hiouani_en.pdf'; 
+      const cvUrl = '/Rayane_Hiouani_CV_en.pdf'; 
 
       const handleShowModal = () => {
         document.getElementById("header").style.display = 'none';
