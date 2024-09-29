@@ -37,14 +37,14 @@ function Projects() {
             github=""
             />
 
-<Card 
+{/* <Card 
             image="takwim.png"
             title="Takwim"
             desc="Website for islamic scholar Mshmsdin." 
             techs={["NextJs" , "TailwindCss" , "Django" , "MySQL"]}
             link="#"  
             github=""
-            />
+            /> */}
 
 
       </div>

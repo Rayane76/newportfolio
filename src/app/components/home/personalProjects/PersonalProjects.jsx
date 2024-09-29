@@ -22,14 +22,14 @@ export default function PersonalProjects(){
             github="https://github.com/Rayane76/Portfolio"
             />
 
-<Card 
+{/* <Card 
             image="gip.png"
             title="E-commerce website"
             desc="E-commerce website built while learning NextJs" 
             techs={["NextJs" , "Bootstrap" , "Mongodb"]}
             link="https://gip-lemon.vercel.app/"  
             github="https://github.com/Rayane76/gip"
-            />
+            /> */}
 
 <Card 
             image="pfe.png"
