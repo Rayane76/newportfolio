@@ -83,7 +83,12 @@ export default function Work() {
               </ul>
             </div>
           </CustomTabPanel>
-          <CustomTabPanel style={{ color: "white" }} value={value} index={1}>
+          <CustomTabPanel
+            style={{ color: "white !important" }}
+            className="text-white"
+            value={value}
+            index={1}
+          >
             <div>
               <h1 className="text-2xl">
                 Full Stack Engineer{" "}
