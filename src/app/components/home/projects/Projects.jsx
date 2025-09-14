@@ -26,7 +26,7 @@ function Projects() {
             title="Aposto store"
             desc="E-commerce website for Aposto : Clothes brand."
             techs={["NextJs", "Typescript", "Bootstrap", "Prisma"]}
-            link="https://www.aposto.store"
+            link="https://aposto-murex.vercel.app"
             github="https://github.com/Rayane76/aposto"
           />
 
