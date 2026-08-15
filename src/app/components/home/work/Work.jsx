@@ -43,8 +43,9 @@ export default function Work() {
               onChange={handleChange}
               aria-label="basic tabs example"
             >
-              <Tab label="CodeItDz" />
-              <Tab label="Ekrili" />
+              <Tab label="CodeItDz" sx={{ color: "white" }} />
+              <Tab label="Ekrili" sx={{ color: "white" }} />
+              <Tab label="Diar Dzair" sx={{ color: "white" }} />
               {/* <Tab label="Item Three"  /> */}
             </Tabs>
           </Box>
@@ -124,6 +125,45 @@ export default function Work() {
                 <li className="workList text-base mb-2">
                   Configured and maintained KrakenD API Gateway, Containerized
                   the application using Docker
+                </li>
+              </ul>
+            </div>
+          </CustomTabPanel>
+          <CustomTabPanel
+            style={{ color: "white !important" }}
+            className="text-white"
+            value={value}
+            index={2}
+          >
+            <div>
+              <h1 className="text-2xl">
+                Full Stack Developer{" "}
+                <a
+                  href="https://diardzair.com.dz"
+                  target="_blank"
+                  className="text-fun-pink"
+                >
+                  @Diar Dzair
+                </a>
+              </h1>
+              <p className="text-sm text-fun-gray mt-2">
+                October 2025 - Present
+              </p>
+              <ul className="mt-2">
+                <li className="workList text-base mb-2">
+                  Designed and developed a company-wide multi-tenant ERP system using Laravel and
+                  Filament, with inventory management, invoicing,<br></br> procurement, and reporting modules.
+                </li>
+                <li className="workList text-base mb-2">
+                  Developed a Kotlin-based mobile application leveraging RFID technology for advanced
+                  inventory tracking, stock management, <br></br> and warehouse operations.
+                </li>
+                <li className="workList text-base mb-2">
+                  Managed and optimized a central database with tables of 10M+ records, ensuring efficient
+                  queries and low response times.
+                </li>
+                <li className="workList text-base mb-2">
+                  Improved enterprise security by implementing RSA-based inter-application communication.
                 </li>
               </ul>
             </div>
