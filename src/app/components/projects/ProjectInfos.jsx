@@ -3,14 +3,24 @@
 import { useState, useRef, useCallback } from "react";
 
 const SWIPE_THRESHOLD = 45; // px of drag needed to trigger a slide change
+const DIRECTION_LOCK_THRESHOLD = 8; // px moved before we decide horizontal vs vertical
 
 export default function ProjectInfos({ project }) {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [dragOffset, setDragOffset] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
 
     const containerRef = useRef(null);
-    const dragState = useRef({ startX: 0, pointerId: null, width: 0 });
+    const trackRef = useRef(null);
+
+    // Mutable drag state — avoids re-rendering on every pointermove
+    const dragState = useRef({
+        startX: 0,
+        startY: 0,
+        offset: 0,
+        pointerId: null,
+        width: 0,
+        direction: null, // null | "horizontal" | "vertical"
+    });
 
     if (!project) {
         return (
@@ -28,42 +38,86 @@ export default function ProjectInfos({ project }) {
     const goToPrevious = () => count && setActiveIndex((current) => clampIndex(current - 1));
     const goToNext = () => count && setActiveIndex((current) => clampIndex(current + 1));
 
+    const setTrackTransform = (offsetPx, withTransition) => {
+        const track = trackRef.current;
+        if (!track) return;
+        track.style.transition = withTransition
+            ? "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)"
+            : "none";
+        track.style.transform = `translateX(calc(${-activeIndex * 100}% + ${offsetPx}px))`;
+    };
+
     const handlePointerDown = (e) => {
         if (count < 2) return;
+        // Let buttons (arrows, dots) handle their own clicks — don't hijack them
+        if (e.target.closest("button")) return;
+
         const container = containerRef.current;
         if (!container) return;
+
         dragState.current = {
             startX: e.clientX,
+            startY: e.clientY,
+            offset: 0,
             pointerId: e.pointerId,
             width: container.clientWidth,
+            direction: null,
         };
-        container.setPointerCapture(e.pointerId);
-        setIsDragging(true);
+        // Don't capture the pointer or set isDragging yet — wait until we know
+        // this is a horizontal gesture, so vertical page scroll stays smooth.
     };
 
     const handlePointerMove = (e) => {
-        if (!isDragging || count < 2) return;
-        const delta = e.clientX - dragState.current.startX;
-        setDragOffset(delta);
+        const state = dragState.current;
+        if (state.pointerId !== e.pointerId || count < 2) return;
+
+        const dx = e.clientX - state.startX;
+        const dy = e.clientY - state.startY;
+
+        if (state.direction === null) {
+            if (Math.abs(dx) < DIRECTION_LOCK_THRESHOLD && Math.abs(dy) < DIRECTION_LOCK_THRESHOLD) {
+                return; // not enough movement yet to decide
+            }
+            state.direction = Math.abs(dx) > Math.abs(dy) ? "horizontal" : "vertical";
+            if (state.direction === "horizontal") {
+                containerRef.current?.setPointerCapture(e.pointerId);
+                setIsDragging(true);
+            }
+        }
+
+        if (state.direction !== "horizontal") return; // let native vertical scroll happen
+
+        e.preventDefault();
+        state.offset = dx;
+        setTrackTransform(dx, false);
     };
 
-    const endDrag = useCallback(() => {
-        if (!isDragging) return;
-        const delta = dragOffset;
+    const endDrag = useCallback((e) => {
+        const state = dragState.current;
+        if (state.direction !== "horizontal") {
+            state.pointerId = null;
+            return;
+        }
+
+        const delta = state.offset;
+        state.pointerId = null;
+        state.direction = null;
         setIsDragging(false);
-        setDragOffset(0);
 
         if (delta <= -SWIPE_THRESHOLD) {
             goToNext();
         } else if (delta >= SWIPE_THRESHOLD) {
             goToPrevious();
+        } else {
+            // snap back
+            setTrackTransform(0, true);
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isDragging, dragOffset]);
+    }, []);
 
-    const handlePointerUp = () => endDrag();
-    const handlePointerLeave = () => {
-        if (isDragging) endDrag();
+    const handlePointerUp = (e) => endDrag(e);
+    const handlePointerLeave = (e) => {
+        if (dragState.current.direction === "horizontal") endDrag(e);
     };
 
     return (
@@ -96,13 +150,12 @@ export default function ProjectInfos({ project }) {
                             className="group relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-black/30 touch-pan-y select-none cursor-grab active:cursor-grabbing"
                         >
                             <div
+                                ref={trackRef}
                                 className="flex w-full"
                                 style={{
-                                    transform: `translateX(calc(${-activeIndex * 100}% + ${isDragging ? dragOffset : 0
-                                        }px))`,
-                                    transition: isDragging
-                                        ? "none"
-                                        : "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)",
+                                    transform: `translateX(${-activeIndex * 100}%)`,
+                                    transition: "transform 420ms cubic-bezier(0.22, 1, 0.36, 1)",
+                                    willChange: "transform",
                                 }}
                             >
                                 {media.map((item, index) => (
