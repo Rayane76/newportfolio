@@ -14,7 +14,7 @@ import Work from "./components/home/work/Work";
 
 
 export default async function Home() {
-  
+
   // const header = headers()
   // const ip = (header.get('x-forwarded-for') ?? '127.0.0.1').split(',')[0]
 
@@ -38,12 +38,12 @@ export default async function Home() {
 
   return (
     <>
-         <Hero />
-         <Projects />
-         <PersonalProjects />
-         <Skills />
-         <Work />
-         <Footer />
+      <Hero />
+      <Projects />
+      {/* <PersonalProjects /> */}
+      <Skills />
+      <Work />
+      <Footer />
     </>
   );
 }
